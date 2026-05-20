@@ -2,6 +2,8 @@
 
 A lightweight portfolio project for trust & safety analytics, semantic search, and retrieval-grounded content review. The project is intentionally resource-aware: heavy feature extraction and model training run offline, while the online demo serves precomputed artifacts through a small API and Streamlit dashboard.
 
+The demo website can be accessed via [http://124.222.219.226:8502](http://124.222.219.226:8502).
+
 ## Why This Project
 
 Many platform teams need to understand mixed qualitative and quantitative content signals: post text, OCR text, image-derived metadata, user/report metrics, historical labels, model scores, and policy evidence. This project turns that workflow into a compact end-to-end system that can run on a small CPU server while still demonstrating practical LLM/RAG, vector search, model evaluation, and dashboarding.
