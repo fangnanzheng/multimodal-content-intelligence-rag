@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+COPY app /app/app
+COPY src /app/src
+COPY scripts /app/scripts
+COPY config /app/config
+COPY reports /app/reports
+RUN mkdir -p /app/data/raw/images /app/data/processed /app/data/index
+
+ENV PYTHONPATH=/app/src
+CMD ["sh", "-c", "python scripts/ensure_demo.py && streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port 8502"]

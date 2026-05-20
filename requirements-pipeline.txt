@@ -1,0 +1,10 @@
+-r requirements.txt
+# Optional heavy/offline dependencies for a fuller version:
+# paddleocr
+# easyocr
+# opencv-python-headless
+# torch
+# torchvision
+# sentence-transformers
+# faiss-cpu
+

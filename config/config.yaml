@@ -1,0 +1,26 @@
+project:
+  name: multimodal-content-intelligence-rag
+  data_version: demo_v1
+
+paths:
+  raw_content: data/raw/content_demo.csv
+  processed_content: data/processed/content_features.csv
+  predictions: data/processed/model_predictions.csv
+  sqlite_db: data/processed/content.db
+  vectorizer: data/index/text_vectorizer.joblib
+  vector_matrix: data/index/text_vectors.npz
+  index_metadata: data/index/index_metadata.json
+  risk_model: data/processed/risk_model.joblib
+  label_encoder: data/processed/label_encoder.joblib
+
+retrieval:
+  default_top_k: 5
+  combined_text_fields:
+    - post_text
+    - ocr_text
+    - category
+
+risk:
+  high_risk_threshold: 0.70
+  medium_risk_threshold: 0.45
+

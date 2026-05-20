@@ -1,0 +1,22 @@
+policies:
+  - id: policy_financial_scam
+    label: financial_scam
+    title: Financial promotion and fraud risk
+    text: Content promising guaranteed returns, asking users to move to private contact channels, or combining investment claims with urgency should be escalated for manual review.
+  - id: policy_spam
+    label: spam
+    title: Repetitive promotional spam
+    text: Repetitive promotional posts, excessive links, coupon bait, or contact harvesting may reduce ecosystem quality and should be rate-limited or reviewed.
+  - id: policy_counterfeit
+    label: counterfeit
+    title: Counterfeit or suspicious commerce
+    text: Posts that claim branded goods at implausibly low prices, request off-platform payment, or hide seller identity may indicate counterfeit or unsafe commerce.
+  - id: policy_health_misinformation
+    label: health_misinformation
+    title: Health misinformation
+    text: Medical claims promising guaranteed cures, miracle effects, or unverified clinical outcomes require careful review and evidence checks.
+  - id: policy_safe
+    label: safe
+    title: Low-risk normal content
+    text: Content with ordinary personal sharing, neutral product discussion, or clear informational intent is typically low risk unless other signals indicate abuse.
+

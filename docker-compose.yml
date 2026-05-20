@@ -1,0 +1,29 @@
+services:
+  content_api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./config:/app/config
+    restart: unless-stopped
+    mem_limit: 800m
+
+  content_dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8502:8502"
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./config:/app/config
+    depends_on:
+      - content_api
+    restart: unless-stopped
+    mem_limit: 900m
+

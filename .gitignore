@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.pyo
+.env
+logs/
+PROJECT_PROPOSAL_LOCAL.md
+data/raw/images/
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.db
+data/processed/*.joblib
+data/index/*.npz
+data/index/*.joblib
+data/index/*.json
